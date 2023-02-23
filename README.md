@@ -34,3 +34,11 @@ Go to above project folder and open it in VS code. open Terminal and follow belo
 1. You can also export your private key to a file, but be sure to keep it in a safe place:
 	
 	`gpg --armor --output private.key --export-secret-key your@email.com`
+
+### To get the keyring from `gpg --list-keys` command, you can use the following steps:
+1. Open a terminal or command prompt on your computer.
+2. Type `gpg --list-keys` and press Enter. This will list all the keys in your keyring, including the public keys of others and your own public and private keys.
+3. Scroll through the output and locate the key you want to use for encryption.
+4. Note down the ID of the key, which is a string of letters and numbers that comes after the slash (/) in the output. For example, if the key ID is "12345678", you would note down "12345678".
+5. Put above noted key id to the code  for encyption `$gpg->addencryptkey('YOUR_KEYRING_ID_HERE');`
+6. For decryption put key ID in `$gpg->adddecryptkey("YOUR_KEYRING_ID_HERE","PASSPHRASE")`
