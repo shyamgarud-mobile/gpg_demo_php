@@ -17,3 +17,20 @@
 
 After installation, you can test whether GnuPG is installed correctly by running the following command in the terminal or command prompt:
 `gpg --version`
+
+### Generating Public and Private Keys
+First, you need to generate a public-private key pair. This can be done using a command-line tool like GPG. Here's how to do it:
+Go to above project folder and open it in VS code. open Terminal and follow below steps.
+
+1. Generate a new key pair by running the following command: 
+
+	`gpg --gen-key`
+	
+2. Follow the prompts to configure your key. You'll be asked to enter a name, an email address, and a passphrase.
+
+	`gpg --armor --output public.key --export your@email.com`
+	
+	Once your key has been generated, you can export your public key to a file:
+1. You can also export your private key to a file, but be sure to keep it in a safe place:
+	
+	`gpg --armor --output private.key --export-secret-key your@email.com`
