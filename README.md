@@ -42,3 +42,6 @@ Go to above project folder and open it in VS code. open Terminal and follow belo
 4. Note down the ID of the key, which is a string of letters and numbers that comes after the slash (/) in the output. For example, if the key ID is "12345678", you would note down "12345678".
 5. Put above noted key id to the code  for encyption `$gpg->addencryptkey('YOUR_KEYRING_ID_HERE');`
 6. For decryption put key ID in `$gpg->adddecryptkey("YOUR_KEYRING_ID_HERE","PASSPHRASE")`
+### How to import private key with GPG
+
+	gpg --import private.key
