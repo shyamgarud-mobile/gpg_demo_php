@@ -45,3 +45,7 @@ Go to above project folder and open it in VS code. open Terminal and follow belo
 ### How to import private key with GPG
 
 	gpg --import private.key
+### Note
+Add extension to php.ini file
+
+ `extension=gnupg`
