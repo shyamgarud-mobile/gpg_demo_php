@@ -8,6 +8,9 @@
 1. Open Terminal app.
 2. Install Homebrew (if it's not already installed) by running the following command: **`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`**
 3. Type the following command and press Enter: **`brew install gnupg`**
+4. **`pecl install gnupg`**
+5. If you got error retry to install **`brew reinstall gpgme`**
+6. install  **`brew install gnupg`**
 
 #### For Windows:
 
